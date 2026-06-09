@@ -1,0 +1,100 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: "class",
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      maxWidth: {
+        'page': '1200px'
+      },
+      "colors": {
+              "on-tertiary": "#e8fef2",
+              "primary-dim": "#415852",
+              "surface-container-highest": "#e1e3e0",
+              "primary-fixed": "#cfe8e0",
+              "on-secondary-fixed-variant": "#7d5047",
+              "tertiary": "#50635a",
+              "inverse-on-surface": "#9d9d9b",
+              "outline-variant": "#b0b2b0",
+              "on-error-container": "#6e0a12",
+              "secondary": "#81534a",
+              "surface-container-low": "#f4f4f1",
+              "on-error": "#fff7f6",
+              "on-tertiary-fixed": "#3e5148",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#faf9f7",
+              "background": "#faf9f7",
+              "on-surface-variant": "#5d605e",
+              "primary": "#4d645e",
+              "on-tertiary-container": "#50635a",
+              "on-primary-fixed": "#2d443e",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#ffc8bc",
+              "primary-fixed-dim": "#c1dad2",
+              "surface-container": "#edeeec",
+              "surface-dim": "#d9dad8",
+              "tertiary-container": "#e9fff2",
+              "primary-container": "#cfe8e0",
+              "surface-tint": "#4d645e",
+              "outline": "#797b79",
+              "on-background": "#303331",
+              "error": "#a83836",
+              "on-primary": "#e5fef6",
+              "surface": "#faf9f7",
+              "inverse-primary": "#e5fff7",
+              "secondary-fixed": "#ffdad3",
+              "tertiary-fixed": "#e9fff2",
+              "surface-variant": "#e1e3e0",
+              "on-surface": "#303331",
+              "on-tertiary-fixed-variant": "#5a6e65",
+              "inverse-surface": "#0d0e0e",
+              "on-secondary-fixed": "#5d352c",
+              "error-dim": "#67040d",
+              "tertiary-fixed-dim": "#daf0e4",
+              "secondary-dim": "#73483f",
+              "tertiary-dim": "#44574e",
+              "surface-container-high": "#e7e8e6",
+              "on-secondary-container": "#72463d",
+              "on-primary-container": "#405650",
+              "on-primary-fixed-variant": "#49605a",
+              "on-secondary": "#fff7f6",
+              "secondary-container": "#ffdad3",
+              "terracotta": "#C16646",
+              "sandy-beige": "#F7F1E9",
+              "earth-brown": "#3C2A21"
+      },
+      "borderRadius": {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+      },
+      "fontSize": {
+        "label": "0.875rem",
+        "body": "1rem",
+        "h3": "1.5rem",
+        "h2": "2rem",
+        "h1": "2.5rem",
+        "fluid-body": "clamp(1rem, 2vw, 1.125rem)",
+        "fluid-h3": "clamp(1.25rem, 3vw, 1.5rem)",
+        "fluid-h2": "clamp(1.5rem, 4vw, 2rem)",
+        "fluid-h1": "clamp(2rem, 5vw, 2.5rem)",
+        "fluid-display": "clamp(2.5rem, 6vw, 4rem)",
+        "fluid-hero": "clamp(3rem, 8vw, 6rem)"
+      },
+      "fontFamily": {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"],
+              "serif": ["Newsreader", "serif"]
+      }
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries')
+  ],
+}
